@@ -1,1 +1,19 @@
 // Mixins in here
+.button-colors(@background,@font){
+    background-color: @background;
+    color: @font;
+}
+
+.button-green-style() {
+    width: 200px;
+    padding: 14px 0px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Roboto', cursive;
+    border-radius: 16px;
+    .button-colors(@eastern-blue, @white);
+    @media @mobile {
+        padding: 3% 5%;
+        justify-content: center;
+    }
+}
