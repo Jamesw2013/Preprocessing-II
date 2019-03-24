@@ -335,10 +335,6 @@ header nav a {
   .home .content-pick .destination .btn {
     padding: 3% 5%;
     justify-content: center;
-  }
-}
-@media (max-width:500px) {
-  .home .content-pick .destination .btn {
     width: 100%;
   }
 }
