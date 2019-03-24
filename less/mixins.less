@@ -1,11 +1,15 @@
 // Mixins in here
 .button-green-style() {
     width: 200px;
-    background-color: rgb(23, 122, 117);
+    background-color: @eastern-blue;
     padding: 14px 0px;
     text-align: center;
     color: white;
     font-size: 2rem;
     font-family: 'Roboto', cursive;
     border-radius: 16px;
+    @media @mobile {
+        padding: 3% 5%;
+        justify-content: center;
+    }
 };

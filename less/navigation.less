@@ -3,18 +3,40 @@ header {
     width: 100%;
     display: flex;
     align-content: flex-start;
+    align-items: baseline;
     justify-content: space-between;
     border-bottom: 2px dashed @navigation-border;
     padding: 2rem 0 2rem 0;
+    flex-wrap: wrap;
+    color: @shark;
+    h1 {
+        width: 40%;
+
+        @media @mobile {
+            width: 100%;
+            text-align: center;
+            margin:3% 0%;
+        }
+    }
     nav {
+        font: inherit;
         margin: 1rem 2rem 0 0;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
+
+        @media @mobile {
+            width: 100%;
+            text-align: center;
+            margin:3% 0%;
+        }
         a {
             color: @shark;
-            font-size: 15px;
-            padding: 20px 20px 0px 0px;
+            font-size: 1.5rem;
+            padding: 2rem 2rem 0px 0px;
             text-decoration: none;
+            @media @mobile {
+                padding: 0 2rem 0 2rem;
+            }
         }
     }
 }
